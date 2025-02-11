@@ -27,7 +27,7 @@ const PdfPage: React.FC<PdfPageProps> = ({ pdfPath }) => {
     const [totalPdfPage, setTotalPdfPage] = useState(0);
     const generatePdf = (selectedPages: string) => {
        axios
-            .post(`http://localhost:3000/generatepdf`, {
+            .post(`https://pdf-extractor-1-bozw.onrender.com/generatepdf`, {
                 selectedPages,
                 pdfPath,
             })

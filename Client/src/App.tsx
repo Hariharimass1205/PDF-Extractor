@@ -30,7 +30,7 @@ const App: React.FC = () => {
     formData.append("file", pdfFile);
     try {
       axios
-        .post(`http://localhost:3000/uploadpdf`, formData, {
+        .post(`https://pdf-extractor-1-bozw.onrender.com/uploadpdf`, formData, {
           headers: { "Content-Type": "multipart/form-data" },
         })
         .then((res) => {
